@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
+:root{
+  --dark : "#444941";
+  --fore-dark : '#5F7A61';
+  --light : '#D5EEBB';
+  --fore-light : '#7FC8A9'; 
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Roboto Slab', serif;
+}
+
+body{
+  background-color: #f2f2f2;
+}
+
+.get-entry{
+  min-height: 60vh;
+  margin-top: 10%;
+  font-weight: bolder;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+  display: none;
+}
+
+#name{
+  padding: 15px;
+}
+
+.btn{
+  margin-top: 20px;
+}
+
+.app{
+  height: 100vh;
+  padding: 15px;
+}
+
+.app header{
+  display: flex;
+  color: rgba(23, 23, 255, 0.603);
+}
+
+.screen{
+  margin-top: 15px;
+  border: 7px solid rgba(38, 38, 204, 0.815);
+  border-radius: 15px;
+  height: 460px;
+  overflow-y: scroll;
+  background: white;
+  padding: 10px;
+}
+
+
+.bi{
+  color: rgba(50, 53, 228, 0.562);
+}
+
+.message-box{
+  padding: 10px;
+  margin-right: 15px;
+  border-radius: 0px;
+}
+
+.send{
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.bi-arrow-right-square-fill{
+  height: 42px;
+  width: 42px;
+  border-radius:0px ;
+}
+.bi-arrow-right-square-fill:hover{
+color: rgba(77, 77, 197, 0.938);
+}
+.send_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ms{
+  width: fit-content;
+  background: rgb(93, 93, 238);
+  padding: 10px;
+  clear: both;
+  color: #f2f2f2;
+}
+.left{
+  float: left;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.right{
+  float: right;
+  border-radius: 5px 0px 0px 5px;
+}

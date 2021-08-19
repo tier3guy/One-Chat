@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+
+  <!-- Bootstraping -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="get-entry">
+      <div class="mb-3">
+        <label class="form-label">Enter your name to Join the chat</label>
+        <input class="form-control" id="name" placeholder="Harshad Mehta">
+        <button type="button" class="btn btn-success" onclick="joinRoom()" id = "join">Join Chat Room</button>
+      </div>
+    </div>
+
+    <div class="app container">
+      <header>
+        <h1>One Chat</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+          <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg>
+      </header>
+      <h4>Get connected with your loved once</h4>
+      <div class="screen">
+        <h6 class="left ms">Rohit : Hey Avinash, how you are doin?</h6>
+        <h6 class="right ms">You : Hey Rohit, I am doing amazing what's bout you?</h6>
+      </div>
+      <div class="input-group mt-2 send_container">
+        <input type="text" class="form-control message-box" placeholder="write your message" aria-label="Recipient's username" >
+        <button type="button" class="send"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+          <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+        </svg></button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<script src="/index.js"></script>
+</html>
