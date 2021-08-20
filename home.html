@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chat App</title>
+  <link rel="shortcut icon" href="google-messages.png" type="image/x-icon">
 
   <!-- Bootstraping -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -12,7 +13,8 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="index.css">
 
-  <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
   <script defer src="/index.js"></script>
 </head>
 <body>
@@ -34,9 +36,7 @@
         </svg>
       </header>
       <h4>Get connected with your loved once</h4>
-      <div class="screen">
-        <h6 class="left ms">Rohit : Hey Avinash, how you are doin?</h6>
-        <h6 class="right ms">You : Hey Rohit, I am doing amazing what's bout you?</h6>
+      <div class="screen" id = "chat_window">
       </div>
       <div class="input-group mt-2 send_container">
         <input type="text" class="form-control message-box" placeholder="write your message" aria-label="Recipient's username" >
