@@ -30,7 +30,6 @@ body{
   display: flex;
   align-items: center;
   padding-left: 20%;
-  display: none;
 }
 
 #name{
@@ -44,6 +43,7 @@ body{
 .app{
   height: 100vh;
   padding: 15px;
+  display: none;
 }
 
 .app header{
@@ -53,7 +53,7 @@ body{
 
 .screen{
   margin-top: 15px;
-  border: 7px solid rgba(38, 38, 204, 0.815);
+  border: 5px solid rgba(38, 38, 204, 0.815);
   border-radius: 15px;
   height: 460px;
   overflow-y: scroll;
@@ -101,10 +101,10 @@ color: rgba(77, 77, 197, 0.938);
 }
 .left{
   float: left;
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 3px 20px 20px 3px;
 }
 
 .right{
   float: right;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 20px 3px 3px 20px;
 }
